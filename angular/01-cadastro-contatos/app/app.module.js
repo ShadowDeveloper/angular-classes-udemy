@@ -7,6 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var app_component_1 = require("./app.component");
 var core_1 = require("@angular/core");
+var app_routing_module_1 = require("./app-routing.module");
 var platform_browser_1 = require("@angular/platform-browser");
 var contatos_module_1 = require("./contatos/contatos.module");
 var AppModule = (function () {
@@ -18,7 +19,8 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [
             platform_browser_1.BrowserModule,
-            contatos_module_1.ContatosModule
+            contatos_module_1.ContatosModule,
+            app_routing_module_1.AppRoutingModule
         ],
         declarations: [
             app_component_1.AppComponent

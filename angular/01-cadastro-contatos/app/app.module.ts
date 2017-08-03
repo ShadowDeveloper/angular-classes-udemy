@@ -1,5 +1,7 @@
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { ContatosModule } from './contatos/contatos.module';
 
@@ -7,7 +9,8 @@ import { ContatosModule } from './contatos/contatos.module';
 @NgModule({
   imports:[
     BrowserModule,
-    ContatosModule
+    ContatosModule,
+    AppRoutingModule
   ],
   declarations:[
     AppComponent

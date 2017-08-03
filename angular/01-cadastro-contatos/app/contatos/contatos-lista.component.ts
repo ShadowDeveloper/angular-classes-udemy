@@ -1,6 +1,6 @@
+import { Component } from '@angular/core';
 import { Contato } from './contato.model';
 import { CONTATOS } from './contatos-mock';
-import { Component } from '@angular/core';
 
 @Component({
   moduleId: module.id, // Necessario para utilizar templateUrl

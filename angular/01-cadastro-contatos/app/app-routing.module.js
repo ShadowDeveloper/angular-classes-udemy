@@ -6,19 +6,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var contatos_mock_1 = require("./contatos-mock");
-var ContatosListaComponent = (function () {
-    function ContatosListaComponent() {
-        this.contatos = contatos_mock_1.CONTATOS;
+var router_1 = require("@angular/router");
+var appRoutes = [
+    {
+        path: '',
+        redirectTo: '/contato',
+        pathMatch: 'full'
     }
-    return ContatosListaComponent;
+];
+var AppRoutingModule = (function () {
+    function AppRoutingModule() {
+    }
+    return AppRoutingModule;
 }());
-ContatosListaComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'contatos-lista',
-        templateUrl: 'contatos-lista.component.html'
+AppRoutingModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            router_1.RouterModule.forRoot(appRoutes)
+        ],
+        declarations: [],
+        exports: []
     })
-], ContatosListaComponent);
-exports.ContatosListaComponent = ContatosListaComponent;
-//# sourceMappingURL=contatos-lista.component.js.map
+], AppRoutingModule);
+exports.AppRoutingModule = AppRoutingModule;
+//# sourceMappingURL=app-routing.module.js.map

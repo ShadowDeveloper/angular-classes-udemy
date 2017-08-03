@@ -6,19 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var contatos_mock_1 = require("./contatos-mock");
-var ContatosListaComponent = (function () {
-    function ContatosListaComponent() {
-        this.contatos = contatos_mock_1.CONTATOS;
+var ContatoDetalhe = (function () {
+    function ContatoDetalhe() {
     }
-    return ContatosListaComponent;
+    return ContatoDetalhe;
 }());
-ContatosListaComponent = __decorate([
+ContatoDetalhe = __decorate([
     core_1.Component({
         moduleId: module.id,
-        selector: 'contatos-lista',
-        templateUrl: 'contatos-lista.component.html'
+        selector: "contato-detalhe",
+        templateUrl: 'contato-detalhe.component.html'
     })
-], ContatosListaComponent);
-exports.ContatosListaComponent = ContatosListaComponent;
-//# sourceMappingURL=contatos-lista.component.js.map
+], ContatoDetalhe);
+exports.ContatoDetalhe = ContatoDetalhe;
+//# sourceMappingURL=contato-detalhe.component.js.map
