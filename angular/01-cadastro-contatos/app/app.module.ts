@@ -1,10 +1,13 @@
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ContatosModule } from './contatos/contatos.module';
+
 
 @NgModule({
   imports:[
-    BrowserModule
+    BrowserModule,
+    ContatosModule
   ],
   declarations:[
     AppComponent

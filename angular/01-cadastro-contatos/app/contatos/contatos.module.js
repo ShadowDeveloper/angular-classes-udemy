@@ -6,16 +6,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var contatos_lista_component_1 = require("./contatos-lista.component");
+var ContatosModule = (function () {
+    function ContatosModule() {
     }
-    return AppComponent;
+    return ContatosModule;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'my-app',
-        template: "\n    <h1>Angular App</h1>\n    <contatos-lista></contatos-lista>\n  "
+ContatosModule = __decorate([
+    core_1.NgModule({
+        declarations: [
+            contatos_lista_component_1.ContatosListaComponent
+        ],
+        exports: [
+            contatos_lista_component_1.ContatosListaComponent
+        ]
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], ContatosModule);
+exports.ContatosModule = ContatosModule;
+//# sourceMappingURL=contatos.module.js.map
