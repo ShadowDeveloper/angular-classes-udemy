@@ -4,7 +4,7 @@ import { Component } from "@angular/core";
   selector: 'my-app', // <my-app></my-app>
   template:`
     <h1>Angular App</h1>
-    <contatos-lista></contatos-lista>
+    <router-outlet></router-outlet>
   `
 })
 

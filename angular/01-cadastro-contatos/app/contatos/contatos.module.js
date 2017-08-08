@@ -8,6 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var contatos_lista_component_1 = require("./contatos-lista.component");
+var contato_detalhe_component_1 = require("./contato-detalhe.component");
+var contato_routing_module_1 = require("./contato-routing.module");
 var ContatosModule = (function () {
     function ContatosModule() {
     }
@@ -16,10 +18,12 @@ var ContatosModule = (function () {
 ContatosModule = __decorate([
     core_1.NgModule({
         imports: [
-            common_1.CommonModule
+            common_1.CommonModule,
+            contato_routing_module_1.ContatoRoutingModule
         ],
         declarations: [
-            contatos_lista_component_1.ContatosListaComponent
+            contatos_lista_component_1.ContatosListaComponent,
+            contato_detalhe_component_1.ContatoDetalheComponent
         ],
         exports: [
             contatos_lista_component_1.ContatosListaComponent

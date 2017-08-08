@@ -7,4 +7,4 @@ import { Component } from '@angular/core';
   templateUrl:'contato-detalhe.component.html'
 })
 
-export class ContatoDetalhe {}
+export class ContatoDetalheComponent {}

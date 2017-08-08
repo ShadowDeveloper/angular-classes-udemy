@@ -6,17 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var ContatoDetalhe = (function () {
-    function ContatoDetalhe() {
+var ContatoDetalheComponent = (function () {
+    function ContatoDetalheComponent() {
     }
-    return ContatoDetalhe;
+    return ContatoDetalheComponent;
 }());
-ContatoDetalhe = __decorate([
+ContatoDetalheComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: "contato-detalhe",
         templateUrl: 'contato-detalhe.component.html'
     })
-], ContatoDetalhe);
-exports.ContatoDetalhe = ContatoDetalhe;
+], ContatoDetalheComponent);
+exports.ContatoDetalheComponent = ContatoDetalheComponent;
 //# sourceMappingURL=contato-detalhe.component.js.map

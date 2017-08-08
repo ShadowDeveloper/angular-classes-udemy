@@ -7,28 +7,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
-var appRoutes = [
+var contatos_lista_component_1 = require("./contatos-lista.component");
+var contato_detalhe_component_1 = require("./contato-detalhe.component");
+var contatoRoutes = [
     {
-        path: '',
-        redirectTo: '/contato',
-        pathMatch: 'full'
+        path: "contato",
+        component: contatos_lista_component_1.ContatosListaComponent
+    },
+    {
+        path: 'contato/save',
+        component: contato_detalhe_component_1.ContatoDetalheComponent
     }
 ];
-var AppRoutingModule = (function () {
-    function AppRoutingModule() {
+var ContatoRoutingModule = (function () {
+    function ContatoRoutingModule() {
     }
-    return AppRoutingModule;
+    return ContatoRoutingModule;
 }());
-AppRoutingModule = __decorate([
+ContatoRoutingModule = __decorate([
     core_1.NgModule({
-        imports: [
-            router_1.RouterModule.forRoot(appRoutes)
-        ],
-        declarations: [],
-        exports: [
-            router_1.RouterModule
-        ]
+        imports: [router_1.RouterModule.forChild(contatoRoutes)]
     })
-], AppRoutingModule);
-exports.AppRoutingModule = AppRoutingModule;
-//# sourceMappingURL=app-routing.module.js.map
+], ContatoRoutingModule);
+exports.ContatoRoutingModule = ContatoRoutingModule;
+//# sourceMappingURL=contato-routing.module.js.map
