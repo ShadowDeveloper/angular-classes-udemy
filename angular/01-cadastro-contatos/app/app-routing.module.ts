@@ -7,7 +7,6 @@ const appRoutes: Routes = [
     redirectTo:'/contato',
     pathMatch:'full'
   }
-
 ]
 
 

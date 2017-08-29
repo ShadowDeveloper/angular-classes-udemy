@@ -11,7 +11,7 @@ var contatos_lista_component_1 = require("./contatos-lista.component");
 var contato_detalhe_component_1 = require("./contato-detalhe.component");
 var contatoRoutes = [
     {
-        path: "contato",
+        path: 'contato',
         component: contatos_lista_component_1.ContatosListaComponent
     },
     {
@@ -26,7 +26,8 @@ var ContatoRoutingModule = (function () {
 }());
 ContatoRoutingModule = __decorate([
     core_1.NgModule({
-        imports: [router_1.RouterModule.forChild(contatoRoutes)]
+        imports: [router_1.RouterModule.forChild(contatoRoutes)],
+        exports: [router_1.RouterModule]
     })
 ], ContatoRoutingModule);
 exports.ContatoRoutingModule = ContatoRoutingModule;

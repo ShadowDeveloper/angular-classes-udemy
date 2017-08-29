@@ -5,7 +5,7 @@ import { ContatoDetalheComponent } from './contato-detalhe.component';
 
 const contatoRoutes: Routes = [
   {
-    path: "contato",
+    path: 'contato',
     component: ContatosListaComponent
   },
   {
@@ -15,6 +15,8 @@ const contatoRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(contatoRoutes)]
+  imports: [RouterModule.forChild(contatoRoutes)],
+  exports:[RouterModule]
 })
+
 export class ContatoRoutingModule {}
