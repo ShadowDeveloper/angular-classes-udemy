@@ -11,7 +11,7 @@ var ContatoService = (function () {
     function ContatoService() {
     }
     ContatoService.prototype.getContatos = function () {
-        return contatos_mock_1.CONTATOS;
+        return Promise.resolve(contatos_mock_1.CONTATOS);
     };
     return ContatoService;
 }());

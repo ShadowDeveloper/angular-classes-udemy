@@ -15,7 +15,14 @@ var ContatosListaComponent = (function () {
         this.contatoService = contatoService;
     }
     ContatosListaComponent.prototype.ngOnInit = function () {
-        this.contatos = this.contatoService.getContatos();
+        var _this = this;
+        // this.contatos = this.contatoService.getContatos();
+        this.contatoService.getContatos()
+            .then(function (contatos) {
+            _this.contatos = contatos;
+        }).catch(function (err) {
+            console.log(err);
+        });
     };
     return ContatosListaComponent;
 }());
