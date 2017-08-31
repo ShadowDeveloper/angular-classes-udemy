@@ -13,6 +13,30 @@ var ContatoService = (function () {
     ContatoService.prototype.getContatos = function () {
         return Promise.resolve(contatos_mock_1.CONTATOS);
     };
+    ContatoService.prototype.getContatosSlowly = function () {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            setTimeout(resolve, 3000);
+        })
+            .then(function () {
+            console.log('primeiro then');
+            return 'Curso angular 2';
+        })
+            .then(function (param) {
+            console.log('segundo then');
+            console.log(param);
+            return new Promise(function (resolve2, reject2) {
+                setTimeout(function () {
+                    console.log('constiando depois de 4 segundos');
+                    resolve2();
+                }, 4000);
+            });
+        })
+            .then(function () {
+            console.log('terceiro then que chama o metodo de getContatos');
+            return _this.getContatos();
+        });
+    };
     return ContatoService;
 }());
 ContatoService = __decorate([

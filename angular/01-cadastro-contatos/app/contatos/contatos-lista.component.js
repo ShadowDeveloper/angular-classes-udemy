@@ -16,7 +16,7 @@ var ContatosListaComponent = (function () {
     }
     ContatosListaComponent.prototype.ngOnInit = function () {
         var _this = this;
-        // this.contatos = this.contatoService.getContatos();
+        // this.contatoService.getContatosSlowly()
         this.contatoService.getContatos()
             .then(function (contatos) {
             _this.contatos = contatos;
