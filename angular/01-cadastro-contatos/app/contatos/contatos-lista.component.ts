@@ -11,7 +11,6 @@ import { ContatoService } from './contato.service';
   // ]
 })
 
-
 export class ContatosListaComponent implements OnInit{
   contatos: Contato[];
   constructor(private contatoService:ContatoService){}
